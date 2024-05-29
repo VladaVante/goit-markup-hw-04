@@ -32,8 +32,9 @@ img {
    background-color: white;
    border-bottom: 1px solid #e7e9fc;
    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-      0px 1px 1px rgba(46, 47, 66, 0.16)
-}
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 1px 6px rgba(46, 47, 66, 0.08);
+}      
 
 .header-container {
    display: flex;
@@ -69,6 +70,9 @@ img {
    list-style-type: none;
    display: flex;
    gap: 40px;
+}
+
+.first-header-list {
    color: #404bbf;
 }
 
@@ -146,7 +150,8 @@ img {
    padding: 188px 0;
    background-image: linear-gradient(
          rgba(46, 47, 66, 0.7),
-         rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1\ \(1\).jpg);
+         rgba(46, 47, 66, 0.7)), 
+         url(../images/people-office.jpg);
    background-repeat: no-repeat;
    max-width: 1440px;
    background-position: center;
