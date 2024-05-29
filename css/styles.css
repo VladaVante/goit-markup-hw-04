@@ -31,6 +31,8 @@ img {
 .page-header {
    background-color: white;
    border-bottom: 1px solid #e7e9fc;
+   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16)
 }
 
 .header-container {
@@ -67,6 +69,7 @@ img {
    list-style-type: none;
    display: flex;
    gap: 40px;
+   color: #404bbf;
 }
 
 .header-link {
@@ -78,20 +81,7 @@ img {
    justify-content: start;
    align-items: end;
    position: relative;
-   transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover::after {
-   content: "";
-   position: absolute;
-   left: 0;
-   bottom: -1px;
-   display: block;
-   border-radius: 2px;
-   width: 48px;
-   height: 4px;
-   background-color: #404bbf;
-   margin: 10px auto 0;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu .header-link:hover {
@@ -100,6 +90,19 @@ img {
    
 .header-menu .header-link:focus {
    color: #404bbf;
+}
+
+.header-link.current::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -1px;
+   display: block;
+   border-radius: 2px;
+   width: 100%;
+   height: 4px;
+   background-color: #404bbf;
+   margin: 10px auto 0;
 }
 
 .header-contact {
@@ -123,7 +126,7 @@ img {
    color: #434455;
    font-style: normal;
    text-decoration: none;
-   transition-property: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-menu .contact-link:hover {
@@ -141,7 +144,7 @@ img {
 .hero {
    background-color: #2E2F42;
    padding: 188px 0;
-   background-image: linear-gradient(to bottom,
+   background-image: linear-gradient(
          rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1\ \(1\).jpg);
    background-repeat: no-repeat;
@@ -348,6 +351,10 @@ img {
    background-color: #404BBF;
 }
 
+.team-link:focus {
+   background-color: #404BBF;
+}
+
 .portfolio-container {
    display: block;
 }
@@ -477,6 +484,7 @@ img {
    letter-spacing: 0.02em;
    color: #fff;
    padding: 0 112px 16px 0 ;
+   margin-bottom: 16px;
 }
 
 .footer-list {
@@ -495,5 +503,9 @@ img {
 }
 
 .footer-link:hover {
+   background-color: #31D0AA;
+}
+
+.footer-link:focus {
    background-color: #31D0AA;
 }
